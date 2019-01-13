@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlling2D", "Controlling2D\Controlling2D.csproj", "{81701E67-CB02-4BCF-8F13-297D6A3FB480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlling2DTests", "Controlling2DTests\Controlling2DTests.csproj", "{561A0B8B-065B-4C55-9F57-761F72AFAB81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81701E67-CB02-4BCF-8F13-297D6A3FB480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81701E67-CB02-4BCF-8F13-297D6A3FB480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81701E67-CB02-4BCF-8F13-297D6A3FB480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81701E67-CB02-4BCF-8F13-297D6A3FB480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561A0B8B-065B-4C55-9F57-761F72AFAB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561A0B8B-065B-4C55-9F57-761F72AFAB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561A0B8B-065B-4C55-9F57-761F72AFAB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561A0B8B-065B-4C55-9F57-761F72AFAB81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
