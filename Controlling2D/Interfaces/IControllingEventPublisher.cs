@@ -1,4 +1,4 @@
-namespace Controlling2D
+namespace Controlling2D.Interfaces
 {
     public interface IControllingEventPublisher
     {

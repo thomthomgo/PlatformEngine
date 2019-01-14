@@ -36,12 +36,19 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IControllingEvent.cs" />
-    <Compile Include="IControllingEventBus.cs" />
-    <Compile Include="IControllingEventPublisher.cs" />
+    <Compile Include="ControllingEventBus\ControllingEventBus.cs" />
+    <Compile Include="Interfaces\IControllingEvent.cs" />
+    <Compile Include="Interfaces\IControllingEventBus.cs" />
+    <Compile Include="Interfaces\IControllingEventPublisher.cs" />
+    <Compile Include="Interfaces\IPlayerInputEventPublisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publishers\PlayerInput\PlayerInputControllingEvent.cs" />
+    <Compile Include="Publishers\PlayerInput\PlayerInputEventPublisher.cs" />
   </ItemGroup>
   <ItemGroup>
     <FilesToMove Include="$(ProjectDir)\bin\debug\*.dll" />
