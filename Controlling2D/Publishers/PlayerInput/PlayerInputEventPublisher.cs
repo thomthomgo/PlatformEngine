@@ -1,4 +1,5 @@
 using Controlling2D.Interfaces;
+using Controlling2D.MonoBehaviours;
 using UnityEngine;
 
 namespace Controlling2D.Publishers.PlayerInput
@@ -21,6 +22,16 @@ namespace Controlling2D.Publishers.PlayerInput
         public void RecordPlayerInput(Vector2 playerInput)
         {
             _lastInput = playerInput;
+        }
+
+        public void ListenPlayerInputUpdate(IControllingMonoBehaviour controllingMb)
+        {
+            controllingMb.NewPlayerInputEvent += RecordPlayerInput;
+        }
+
+        public void OnNewPlayerInput(Vector2 playerInput)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
