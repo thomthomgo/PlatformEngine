@@ -1,8 +1,6 @@
-using System;
-using Controlling2D.Interfaces;
 using UnityEngine;
 
-namespace Controlling2D.MonoBehaviours
+namespace Controlling2D.Interfaces
 {
     public delegate void NewPlayerInputEventHandler(Vector2 input);
     public interface IControllingMonoBehaviour

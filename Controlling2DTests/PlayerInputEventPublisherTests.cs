@@ -3,6 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 using System;
 using System.ComponentModel;
+using Controlling2D.Interfaces;
 using Controlling2D.MonoBehaviours;
 using NSubstitute;
 

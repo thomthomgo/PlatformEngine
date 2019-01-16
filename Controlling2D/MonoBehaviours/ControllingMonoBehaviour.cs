@@ -1,3 +1,4 @@
+using Controlling2D.Interfaces;
 using UnityEngine;
 
 namespace Controlling2D.MonoBehaviours
@@ -8,7 +9,6 @@ namespace Controlling2D.MonoBehaviours
         {
             NewPlayerInputEvent?.Invoke(new Vector2(1,2));
         }
-
 
         public event NewPlayerInputEventHandler NewPlayerInputEvent;
     }
