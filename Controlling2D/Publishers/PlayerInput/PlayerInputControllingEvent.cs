@@ -5,7 +5,7 @@ namespace Controlling2D.Publishers.PlayerInput
 {
     public class PlayerInputControllingEvent : IControllingEvent
     {
-        private readonly Vector2 _playerInput;
+        private readonly Vector2 _playerInput = new Vector2();
 
         public PlayerInputControllingEvent(Vector2 playerInput)
         {

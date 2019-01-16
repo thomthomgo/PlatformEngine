@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControllingEventBusTests.cs" />
+    <Compile Include="HorizontalMoveVelocityModule.cs" />
     <Compile Include="PlayerInputEventPublisherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
