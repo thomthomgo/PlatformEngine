@@ -1,3 +1,4 @@
 #!/bin/bash
-pwd
-msbuild ../PlatformEngine.sln
+pwd && ls
+msbuild PlatformEngine.sln
+msbuild PlatformEngine/PlatformEngine.sln
