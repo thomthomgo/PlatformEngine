@@ -1,2 +1,2 @@
 #!/bin/bash
-xbuild PlatformEngine.sln
+msbuild PlatformEngine.sln
