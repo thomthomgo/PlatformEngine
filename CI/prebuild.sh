@@ -1,5 +1,5 @@
-mkdir ../packages
-cd ../packages
-ln -s ${unityPath}/Editor/Data/Managed/UnityEngine.dll .
-cd ../
-nuget restore .
+#!/bin/bash
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+mkdir $SCRIPTPATH/../packages
+ln -s ${unityPath}/Editor/Data/Managed/UnityEngine.dll $SCRIPTPATH/../packages
+nuget restore $SCRIPTPATH/../
