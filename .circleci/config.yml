@@ -6,5 +6,8 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run:
+          name: Prepare Build
+          command: chmod +x ./CI/prebuild.sh && ./CI/prebuild.sh
+      - run:
           name: Build sln
           command: chmod +x ./CI/build.sh && ./CI/build.sh
