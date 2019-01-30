@@ -5,4 +5,9 @@ jobs:
       - image: thomthomgo/mononunit:1 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+      - run:
+          name: Prepare Build
+          command: chmod +x ./CI/prebuild.sh && ./CI/prebuild.sh
+      - run:
+          name: Build sln
+          command: chmod +x ./CI/build.sh && ./CI/build.sh
