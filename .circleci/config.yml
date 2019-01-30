@@ -13,4 +13,4 @@ jobs:
           command: chmod +x ./CI/build.sh && ./CI/build.sh
       - run:
           name: Unit tests
-          command: chmod +x ./CI/test.sh && ./CI/test.sh
+          command: chmod +x ./CI/test.sh && ./CI/test.sh testprojects
