@@ -1,13 +1,16 @@
 version: 1
 jobs:
   build:
-    docker: # use the docker executor type; machine and macos executors are also supported
-      - image: thomthomgo/mononunit:1 # the primary container, where your job's commands are run
+    docker:
+      - image: thomthomgo/mononunit:1
     steps:
-      - checkout # check out the code in the project directory
+      - checkout
       - run:
           name: Prepare Build
           command: chmod +x ./CI/prebuild.sh && ./CI/prebuild.sh
       - run:
           name: Build sln
           command: chmod +x ./CI/build.sh && ./CI/build.sh
+      - run:
+          name: Unit tests
+          command: chmod +x ./CI/test.sh && ./CI/test.sh
